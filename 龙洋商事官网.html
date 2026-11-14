@@ -1,0 +1,862 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>龙洋商事｜日本现地旅行服务 · 包车 · 定制行程 · 一日游 · 住宿代订</title>
+<meta name="description" content="龙洋商事是设在日本的现地旅行服务商，为中文客人提供包车接送机、定制行程与私人导游、一日游与当地体验、住宿与机票代订。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23B23A2B'/%3E%3Ctext x='32' y='44' font-family='serif' font-size='38' fill='%23F1F1EC' text-anchor='middle'%3E龍%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://miaoda.feishu.cn">
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500&display=swap">
+<style>
+:root{
+  --paper:#F1F1EC;
+  --paper-2:#E7E7E0;
+  --ink:#1A1B17;
+  --ink-soft:#55574F;
+  --rule:#C8C8BE;
+  --navy:#17304A;
+  --shu:#B23A2B;
+  --shu-soft:#8E4235;
+  --serif:"Noto Serif SC","Songti SC","Hiragino Mincho ProN","Yu Mincho",serif;
+  --sans:"Noto Sans SC","PingFang SC","Hiragino Sans","Yu Gothic",sans-serif;
+  --maxw:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--sans);font-weight:300;
+  font-size:16px;line-height:1.95;
+  -webkit-font-smoothing:antialiased;
+}
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background-image:repeating-linear-gradient(90deg,rgba(26,27,23,.028) 0 1px,transparent 1px 96px);
+  opacity:.9;
+}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+button,input,textarea{font:inherit;color:inherit}
+::selection{background:var(--shu);color:var(--paper)}
+
+.wrap{position:relative;z-index:1;max-width:var(--maxw);margin:0 auto;padding:0 40px}
+.serif{font-family:var(--serif)}
+.shu{color:var(--shu)}
+
+/* ---------- 顶部 ---------- */
+.site-head{
+  position:sticky;top:0;z-index:20;
+  background:rgba(241,241,236,.92);
+  backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--rule);
+}
+.head-inner{
+  max-width:var(--maxw);margin:0 auto;padding:0 40px;
+  height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px;
+}
+.brand{display:flex;align-items:center;gap:14px;min-width:0}
+.seal{
+  width:38px;height:38px;flex:none;background:var(--shu);color:var(--paper);
+  display:grid;place-items:center;border-radius:3px;
+  font-family:var(--serif);font-size:22px;font-weight:600;line-height:1;
+  box-shadow:inset 0 0 0 2px rgba(241,241,236,.35);
+}
+.brand-text{display:flex;flex-direction:column;line-height:1.2;min-width:0}
+.brand-name{font-family:var(--serif);font-size:19px;font-weight:700;letter-spacing:.14em}
+.brand-sub{font-size:10.5px;letter-spacing:.28em;color:var(--ink-soft);margin-top:5px;white-space:nowrap}
+.nav{display:flex;align-items:center;gap:30px}
+.nav a{
+  font-size:13.5px;letter-spacing:.12em;color:var(--ink-soft);
+  padding:6px 0;position:relative;
+}
+.nav a::after{
+  content:"";position:absolute;left:0;right:100%;bottom:0;height:1px;background:var(--shu);
+  transition:right .35s cubic-bezier(.2,.7,.2,1);
+}
+.nav a:hover,.nav a.is-active{color:var(--ink)}
+.nav a:hover::after,.nav a.is-active::after{right:0}
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:12px 24px;border:1px solid var(--ink);
+  font-size:13px;letter-spacing:.14em;
+  transition:background .3s,color .3s,border-color .3s;
+  cursor:pointer;background:transparent;
+}
+.btn:hover{background:var(--ink);color:var(--paper)}
+.btn-solid{background:var(--shu);border-color:var(--shu);color:#FFF6F2}
+.btn-solid:hover{background:var(--shu-soft);border-color:var(--shu-soft);color:#FFF6F2}
+
+/* ---------- Hero ---------- */
+.hero{padding:80px 0 24px;position:relative}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:72px;align-items:center}
+.hero-copy{min-width:0}
+.hero-kicker{
+  display:flex;align-items:center;gap:14px;margin-bottom:30px;
+  font-size:11px;letter-spacing:.3em;color:var(--ink-soft);
+}
+.hero-kicker span{display:block;width:44px;height:1px;background:var(--rule)}
+.hero-title{
+  font-family:var(--serif);font-weight:600;
+  font-size:clamp(2.5rem,4.6vw,3.9rem);line-height:1.34;letter-spacing:.05em;
+  margin:0 0 30px;
+}
+.hero-title em{font-style:normal;color:var(--shu)}
+.hero-lead{
+  font-size:15px;line-height:2.15;color:var(--ink-soft);max-width:35em;margin:0 0 38px;
+}
+.hero-actions{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.hero-note{font-size:12px;color:#8A8C82;letter-spacing:.06em}
+
+.hero-figure{position:relative;min-width:0;margin:0}
+.hero-photo{
+  border:1px solid var(--ink);overflow:hidden;
+  aspect-ratio:5/4;background:var(--paper-2);
+}
+.hero-photo img{width:100%;height:100%;object-fit:cover}
+.figure-caption{
+  display:flex;justify-content:space-between;gap:16px;
+  margin-top:14px;font-size:11px;letter-spacing:.14em;color:var(--ink-soft);
+}
+.vertical-kanji{
+  position:absolute;top:-14px;left:-40px;
+  writing-mode:vertical-rl;font-family:var(--serif);font-size:15px;
+  letter-spacing:.35em;color:var(--shu);
+}
+.hero-bar{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  margin-top:64px;border-top:1px solid var(--ink);border-bottom:1px solid var(--rule);
+}
+.hero-bar .bar{padding:20px 28px 22px;border-left:1px solid var(--rule)}
+.hero-bar .bar:first-child{border-left:none;padding-left:0}
+.bar-jp{display:block;font-family:var(--serif);font-size:12px;letter-spacing:.22em;color:var(--shu);margin-bottom:8px}
+.bar-text{margin:0;font-size:12.5px;line-height:1.8;color:var(--ink-soft)}
+.hero-index{
+  position:absolute;right:-6px;top:-34px;
+  font-family:var(--serif);font-size:12px;letter-spacing:.2em;color:#8A8C82;
+}
+
+/* ---------- 服务 ---------- */
+.section{padding:104px 0;position:relative}
+.section + .section{border-top:1px solid var(--rule)}
+.sec-head{
+  display:grid;grid-template-columns:120px 1fr;gap:0 40px;align-items:end;
+  margin-bottom:56px;
+}
+.sec-jp{
+  writing-mode:vertical-rl;font-family:var(--serif);font-size:15px;
+  letter-spacing:.3em;color:var(--shu);height:92px;justify-self:start;
+}
+.sec-title{
+  font-family:var(--serif);font-weight:600;margin:0;
+  font-size:clamp(1.8rem,2.8vw,2.5rem);line-height:1.45;letter-spacing:.06em;
+}
+.sec-desc{margin:12px 0 0;color:var(--ink-soft);font-size:14px;max-width:36em}
+
+.svc-list{border-top:1px solid var(--ink)}
+.svc-row{
+  display:grid;grid-template-columns:64px 1fr 236px;gap:36px;
+  padding:38px 0;border-bottom:1px solid var(--rule);
+  align-items:center;
+  transition:background .45s ease;
+}
+.svc-row:hover{background:var(--paper-2)}
+.svc-jp{
+  writing-mode:vertical-rl;font-family:var(--serif);font-size:19px;
+  letter-spacing:.2em;color:var(--shu);justify-self:start;line-height:1;
+  padding-top:2px;
+}
+.svc-body{min-width:0}
+.svc-name{
+  font-family:var(--serif);font-size:22px;font-weight:600;letter-spacing:.06em;
+  margin:0 0 10px;line-height:1.4;
+}
+.svc-text{margin:0;font-size:14.5px;color:var(--ink-soft);line-height:2;max-width:40em}
+.svc-meta{
+  display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:16px;
+  font-size:11.5px;letter-spacing:.1em;color:#7C7E74;
+}
+.svc-meta span::before{content:"";display:inline-block;width:5px;height:5px;background:var(--rule);margin-right:9px;vertical-align:2px}
+.svc-thumb{
+  aspect-ratio:4/3;overflow:hidden;background:var(--paper-2);border:1px solid #D6D6CC;
+  filter:grayscale(.12);
+  transition:filter .45s;
+}
+.svc-row:hover .svc-thumb{filter:grayscale(0)}
+.svc-thumb img{width:100%;height:100%;object-fit:cover}
+
+/* ---------- 目的地 ---------- */
+.dest-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:48px 60px;align-items:start}
+.dest{padding:0}
+.dest:nth-child(even){margin-top:48px}
+.dest-img{
+  aspect-ratio:3/2;overflow:hidden;background:var(--paper-2);border:1px solid #D6D6CC;
+}
+.dest-img img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.dest:hover .dest-img img{transform:scale(1.035)}
+.dest-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-top:18px}
+.dest-name{font-family:var(--serif);font-size:22px;font-weight:600;letter-spacing:.08em;margin:0}
+.dest-jp{font-family:var(--serif);font-size:12px;letter-spacing:.18em;color:var(--shu)}
+.dest-text{margin:10px 0 0;font-size:13.5px;line-height:2;color:var(--ink-soft);max-width:32em}
+
+/* ---------- 季节 ---------- */
+.season-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--ink)}
+.season{
+  padding:30px 26px 36px;border-bottom:1px solid var(--rule);
+  border-right:1px solid var(--rule);
+}
+.season:last-child{border-right:none}
+.season-bar{height:3px;width:100%;margin-bottom:24px}
+.season-name{font-family:var(--serif);font-size:20px;font-weight:600;letter-spacing:.1em;margin:0 0 6px}
+.season-month{font-size:11px;letter-spacing:.18em;color:#7C7E74;margin-bottom:16px}
+.season-text{margin:0;font-size:13.5px;line-height:1.95;color:var(--ink-soft)}
+.s-pr{background:#C98C8F;color:#C98C8F}
+.s-su{background:#4F7A63}
+.s-au{background:#B0672F}
+.s-wi{background:#5B7591}
+
+/* ---------- 流程 ---------- */
+.tl{display:grid;grid-template-columns:110px 40px 1fr;row-gap:0;margin-top:8px}
+.tl-num{
+  font-family:var(--serif);font-size:12px;letter-spacing:.16em;color:#8A8C82;
+  padding-top:30px;
+}
+.tl-rail{position:relative;border-left:1px solid var(--rule)}
+.tl-rail::after{
+  content:"";position:absolute;left:-5px;top:32px;width:9px;height:9px;
+  border-radius:50%;background:var(--shu);box-shadow:0 0 0 4px var(--paper);
+}
+.tl:first-of-type .tl-rail{}
+.tl-body{padding:22px 0 40px}
+.tl-body:last-child{}
+.tl-title{font-family:var(--serif);font-size:19px;font-weight:600;letter-spacing:.08em;margin:0 0 8px}
+.tl-text{margin:0;font-size:14px;line-height:2;color:var(--ink-soft);max-width:44em}
+
+/* ---------- 关于 ---------- */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:72px}
+.quote-mark{font-family:var(--serif);font-size:64px;line-height:.6;color:var(--rule);display:block;margin-bottom:8px}
+.about-title{font-family:var(--serif);font-size:clamp(1.7rem,2.6vw,2.2rem);font-weight:600;line-height:1.6;letter-spacing:.04em;margin:0 0 26px}
+.about-text{font-size:14.5px;line-height:2.1;color:var(--ink-soft);margin:0 0 20px}
+.about-sign{display:flex;align-items:center;gap:14px;margin-top:32px;font-size:12px;letter-spacing:.2em;color:var(--ink-soft)}
+.about-sign span{display:block;width:28px;height:1px;background:var(--shu)}
+.fact-list{margin:0;padding:0;list-style:none;border-top:1px solid var(--rule)}
+.fact{display:grid;grid-template-columns:88px 1fr;gap:20px;padding:18px 0;border-bottom:1px solid var(--rule);font-size:13.5px}
+.fact dt{font-family:var(--serif);color:var(--shu);letter-spacing:.16em;margin:0}
+.fact dd{margin:0;color:var(--ink-soft);line-height:1.85}
+
+/* ---------- 预约 ---------- */
+.contact{background:var(--navy);color:#EDEDE6;border-top:none}
+.contact .sec-jp{color:#D08A78}
+.contact .sec-title{color:#F3F3EC}
+.contact .sec-desc{color:#B8C2CC}
+.contact-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:72px;align-items:start}
+.contact-lead{font-family:var(--serif);font-size:19px;line-height:1.9;letter-spacing:.03em;margin:0 0 28px;color:#F3F3EC}
+.contact-small{font-size:13px;line-height:2;color:#B8C2CC;margin:0 0 10px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:0 28px}
+.field{margin-bottom:26px;min-width:0}
+.field label{display:block;font-size:11px;letter-spacing:.16em;color:#A9B6C2;margin-bottom:8px}
+.field input,.field textarea,.field select{
+  width:100%;background:transparent;border:none;border-bottom:1px solid #465D75;
+  color:#F3F3EC;padding:8px 0 10px;font-size:14px;border-radius:0;
+  transition:border-color .3s;
+}
+.field input:focus,.field textarea:focus,.field select:focus{outline:none;border-bottom-color:#D08A78}
+.field textarea{resize:vertical;min-height:64px;line-height:1.9}
+.field input::placeholder,.field textarea::placeholder{color:#6D8194}
+.form-foot{display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-top:6px}
+.form-msg{font-size:12.5px;color:#D9C3B8;min-height:1.4em}
+
+/* ---------- 页脚 ---------- */
+.footer{padding:56px 0 44px;border-top:1px solid var(--rule);background:var(--paper)}
+.foot-grid{display:grid;grid-template-columns:1.4fr .8fr .8fr;gap:40px;align-items:start}
+.foot-brand{display:flex;align-items:center;gap:12px}
+.foot-note{font-size:11.5px;line-height:1.9;color:#8A8C82;margin-top:16px;max-width:34em}
+.foot-col h4{font-family:var(--serif);font-size:12px;letter-spacing:.2em;font-weight:600;margin:0 0 14px;color:var(--ink)}
+.foot-col a,.foot-col p{display:block;font-size:12.5px;color:var(--ink-soft);margin:0 0 8px;line-height:1.8}
+.copyright{margin-top:40px;padding-top:20px;border-top:1px solid var(--rule);font-size:11px;letter-spacing:.08em;color:#8A8C82;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+/* ---------- 动效 ---------- */
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+  .dest-img img{transition:none}
+}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--shu);outline-offset:3px}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:1024px){
+  .hero-grid{grid-template-columns:1fr;gap:52px}
+  .hero-figure{max-width:620px}
+  .vertical-kanji{left:-26px}
+  .svc-row{grid-template-columns:48px 1fr 180px;gap:24px}
+  .dest-grid{grid-template-columns:1fr 1fr;gap:40px}
+  .dest:nth-child(even){margin-top:44px}
+  .about,.contact-grid{grid-template-columns:1fr;gap:44px}
+}
+@media (max-width:760px){
+  .wrap,.head-inner{padding:0 22px}
+  .head-inner{height:64px}
+  .nav{display:none}
+  .brand-name{font-size:17px;letter-spacing:.1em}
+  .brand-sub{font-size:9px;letter-spacing:.2em}
+  .seal{width:32px;height:32px;font-size:18px}
+  .site-head .btn{padding:9px 16px;font-size:12px}
+  .hero{padding:52px 0 64px}
+  .hero-title{font-size:clamp(1.95rem,7vw,2.5rem);line-height:1.45;letter-spacing:.03em}
+  .hero-lead{font-size:14px;line-height:2}
+  .hero-figure{max-width:100%}
+  .vertical-kanji{position:static;writing-mode:horizontal-tb;letter-spacing:.24em;font-size:11px;margin-bottom:12px}
+  .hero-bar{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  margin-top:64px;border-top:1px solid var(--ink);border-bottom:1px solid var(--rule);
+}
+.hero-bar .bar{padding:20px 28px 22px;border-left:1px solid var(--rule)}
+.hero-bar .bar:first-child{border-left:none;padding-left:0}
+.bar-jp{display:block;font-family:var(--serif);font-size:12px;letter-spacing:.22em;color:var(--shu);margin-bottom:8px}
+.bar-text{margin:0;font-size:12.5px;line-height:1.8;color:var(--ink-soft)}
+.hero-index{display:none}
+  .figure-caption{flex-direction:column;gap:4px}
+  .hero-bar{grid-template-columns:1fr;margin-top:44px}
+  .hero-bar .bar{padding:16px 0 18px;border-left:none;border-top:1px solid var(--rule)}
+  .hero-bar .bar:first-child{border-top:none;padding-top:0}
+  .section{padding:64px 0}
+  .sec-head{grid-template-columns:1fr;gap:14px;margin-bottom:34px}
+  .sec-jp{writing-mode:horizontal-tb;height:auto;letter-spacing:.24em;font-size:11px}
+  .sec-title{font-size:1.4rem;line-height:1.5}
+  .svc-row{grid-template-columns:36px 1fr;gap:16px;padding:26px 0}
+  .svc-thumb{display:none}
+  .svc-jp{font-size:16px}
+  .svc-name{font-size:18px}
+  .svc-text{font-size:13.5px}
+  .dest-grid{grid-template-columns:1fr;gap:34px}
+  .dest:nth-child(even){margin-top:0}
+  .dest-img{aspect-ratio:3/2}
+  .season-grid{grid-template-columns:1fr 1fr}
+  .season:nth-child(2){border-right:none}
+  .season{padding:24px 18px 28px}
+  .tl{grid-template-columns:56px 28px 1fr}
+  .tl-num{padding-top:26px;font-size:11px}
+  .tl-rail::after{top:28px;left:-4.5px;width:8px;height:8px}
+  .tl-body{padding:18px 0 30px}
+  .tl-title{font-size:17px}
+  .form-row{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr;gap:28px}
+  .foot-brand{grid-column:1/-1}
+  .copyright{flex-direction:column;gap:6px}
+}
+
+/* ---------- 方案 ---------- */
+.plan-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--ink)}
+.plan{padding:30px 28px 34px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);display:flex;flex-direction:column}
+.plan:first-child{padding-left:0}
+.plan:last-child{border-right:none;padding-right:0}
+.plan-jp{font-family:var(--serif);font-size:12px;letter-spacing:.2em;color:var(--shu);margin-bottom:14px}
+.plan-title{font-family:var(--serif);font-size:21px;font-weight:600;letter-spacing:.06em;margin:0 0 14px;line-height:1.5}
+.plan-meta{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:11.5px;color:#7C7E74;letter-spacing:.06em;margin:0 0 16px}
+.plan-meta span b{font-weight:400;color:var(--ink)}
+.plan-text{font-size:13.5px;line-height:2;color:var(--ink-soft);margin:0 0 20px}
+.plan-link{
+  margin-top:auto;font-size:12px;letter-spacing:.14em;color:var(--shu);
+  border-bottom:1px solid transparent;transition:border-color .3s;align-self:flex-start;padding-bottom:3px;
+}
+.plan-link:hover{border-bottom-color:var(--shu)}
+
+/* ---------- 优势 ---------- */
+.adv-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--ink)}
+.adv{padding:26px 26px 30px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.adv:nth-child(3n+1){padding-left:0}
+.adv:nth-child(3n){border-right:none;padding-right:0}
+.adv-jp{font-family:var(--serif);font-size:11px;letter-spacing:.22em;color:var(--shu)}
+.adv-title{font-family:var(--serif);font-size:17px;font-weight:600;letter-spacing:.05em;margin:10px 0 10px;line-height:1.5}
+.adv-text{font-size:13px;line-height:1.95;color:var(--ink-soft);margin:0}
+
+/* ---------- 相册 ---------- */
+.gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:start}
+.gal{border:1px solid #D6D6CC;overflow:hidden;background:var(--paper-2)}
+.gal img{width:100%;height:100%;object-fit:cover}
+.gal-a{aspect-ratio:3/2}
+.gal-b{aspect-ratio:3/2}
+.gal-cap{display:flex;justify-content:space-between;gap:10px;font-size:11px;letter-spacing:.12em;color:#7C7E74;margin-top:10px}
+
+@media (max-width:760px){
+  .plan-grid{grid-template-columns:1fr;border-top:1px solid var(--ink)}
+  .plan{padding:22px 0 26px;border-right:none}
+  .plan:last-child{padding-right:0}
+  .plan-text{font-size:13px}
+  .adv-grid{grid-template-columns:1fr}
+  .adv{padding:20px 0 24px;border-right:none}
+  .gal-grid{grid-template-columns:1fr 1fr;gap:12px}
+  .gal-a,.gal-b{aspect-ratio:3/2}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= 顶部 ================= -->
+<header class="site-head">
+  <div class="head-inner">
+    <a class="brand" href="#top" aria-label="龙洋商事 首页">
+      <div class="seal">龍</div>
+      <div class="brand-text">
+        <span class="brand-name">龙洋商事</span>
+        <span class="brand-sub">RYUYO · JAPAN TRAVEL</span>
+      </div>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a href="#plan">方案</a>
+      <a href="#service">服务</a>
+      <a href="#adv">优势</a>
+      <a href="#flow">流程</a>
+      <a href="#gallery">相册</a>
+      <a href="#about">关于</a>
+    </nav>
+    <a class="btn btn-solid" href="#contact">预约咨询</a>
+  </div>
+</header>
+
+<!-- ================= Hero ================= -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <div class="hero-kicker"><span></span>高端定制 · 深度体验 · 日本现地地接</div>
+        <h1 class="hero-title">把日本，<br>走成一条<em>自己的路</em></h1>
+        <p class="hero-lead">
+          龙洋商事设在日本，替中文客人安排车、人、宿和行程。
+          私人小团、企业考察、研学同行，都从理解你要什么开始，而不是从一张现成的路线表开始。
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#contact">说说你的行程</a>
+          <span class="hero-note">私人定制 · 企业团 · 研学</span>
+        </div>
+      </div>
+      <figure class="hero-figure">
+        <div class="hero-index">01</div>
+        <div class="vertical-kanji">旅の栞</div>
+        <div class="hero-photo">
+          <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/PAZxbmfqooKHvLxuZkHcIp4gnnb" alt="清晨的富士山与公路" loading="eager">
+        </div>
+        <figcaption class="figure-caption">
+          <span>富士山 · 静冈县 · 天亮之前</span>
+          <span>早一点出发，路上没有人</span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="hero-bar reveal">
+      <div class="bar">
+        <span class="bar-jp">天数</span>
+        <p class="bar-text">几天、去哪，由你定；我们只负责把它排得合理。</p>
+      </div>
+      <div class="bar">
+        <span class="bar-jp">承接</span>
+        <p class="bar-text">私人小团、企业团、研学团，百人级可拆分动线。</p>
+      </div>
+      <div class="bar">
+        <span class="bar-jp">对接</span>
+        <p class="bar-text">中日双语，落地有人跟，临时变动当场处理。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 方案 ================= -->
+<section class="section" id="plan">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-jp">ご提案</div>
+      <div>
+        <h2 class="sec-title">三种走法，都从一次对话开始</h2>
+        <p class="sec-desc">标准路线省事，但常常不是你要的那一趟。下面三类是我们最常接的委托，天数与目的地都可以改。</p>
+      </div>
+    </div>
+
+    <div class="plan-grid">
+      <article class="plan reveal">
+        <div class="plan-jp">個人</div>
+        <h3 class="plan-title">私人定制 · 小团旅行</h3>
+        <div class="plan-meta"><span>天数：<b>您定</b></span><span>目的地：<b>您选</b></span></div>
+        <p class="plan-text">只属于你的日本旅行，从理解你开始。不同于标准路线，我们从你的时间、兴趣与旅行方式出发，把住宿、体验与节奏一起排进去。</p>
+        <a class="plan-link" href="#contact">聊聊这个方案</a>
+      </article>
+
+      <article class="plan reveal">
+        <div class="plan-jp">企業</div>
+        <h3 class="plan-title">企业团 · 商务考察</h3>
+        <div class="plan-meta"><span>天数：<b>按议程</b></span><span>目的地：<b>东京 · 大阪 · 名古屋</b></span></div>
+        <p class="plan-text">访问、会议、翻译、车辆分段执行，动线按人数拆开走。企业团最怕临时改议程，所以每一步都留了替换方案。</p>
+        <a class="plan-link" href="#contact">聊聊这个方案</a>
+      </article>
+
+      <article class="plan reveal">
+        <div class="plan-jp">研学</div>
+        <h3 class="plan-title">研学 · 冬夏令营</h3>
+        <div class="plan-meta"><span>天数：<b>6 — 14 日</b></span><span>目的地：<b>东京 · 千叶 · 京都</b></span></div>
+        <p class="plan-text">学校参访、日语课程、寄宿家庭与带队老师。孩子的作息与安全排在行程前面，家长每天能收到当天的情况。</p>
+        <a class="plan-link" href="#contact">聊聊这个方案</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 服务 ================= -->
+<section class="section" id="service">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-jp">おもてなし</div>
+      <div>
+        <h2 class="sec-title">四件事，交给我们</h2>
+        <p class="sec-desc">不卖大巴团，也不把人塞进模板路线。每一段都可以单独要，也可以拼成一次完整的旅行。</p>
+      </div>
+    </div>
+
+    <div class="svc-list">
+      <article class="svc-row reveal">
+        <div class="svc-jp">送迎</div>
+        <div class="svc-body">
+          <h3 class="svc-name">包车接送与机场接送</h3>
+          <p class="svc-text">落地那一刻最累。司机举牌在到达口等，行李直接上车，不用研究电车换乘。多日包车按你的动线走，路上看到想停的地方，说一声就停。</p>
+          <div class="svc-meta"><span>成田 · 羽田 · 关西 · 中部</span><span>中文司机</span><span>按人数配车</span></div>
+        </div>
+        <div class="svc-thumb"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/ZRn6bylu4ogdFBxrUU1csm7dnAw" alt="伊豆山间的盘山公路" loading="lazy"></div>
+      </article>
+
+      <article class="svc-row reveal">
+        <div class="svc-jp">案内</div>
+        <div class="svc-body">
+          <h3 class="svc-name">定制行程与私人导游</h3>
+          <p class="svc-text">先聊你想要什么样的旅行：带孩子、看建筑、吃东西、拍照，或者只是想慢一点。我们排出逐日动线，标好车程、开门时间和备选，再按你的意见改到合适。</p>
+          <div class="svc-meta"><span>逐日动线</span><span>中文导游</span><span>可改三次</span></div>
+        </div>
+        <div class="svc-thumb"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/FTu6bDfpYoq7PpxXu6scaGg2nag" alt="京都祇园的小巷" loading="lazy"></div>
+      </article>
+
+      <article class="svc-row reveal">
+        <div class="svc-jp">日帰</div>
+        <div class="svc-body">
+          <h3 class="svc-name">一日游与当地体验</h3>
+          <p class="svc-text">富士山与河口湖、京都东山、奈良喂鹿、宇治抹茶、和服与茶事。小团出发，不当大巴团；愿意早起的，我们带你赶在没有人的时候到。</p>
+          <div class="svc-meta"><span>小团 6 人内</span><span>可接送</span><span>半日 / 全日</span></div>
+        </div>
+        <div class="svc-thumb"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/Vh97btPnSoPp2uxoLQkcBUcznrf" alt="奈良公园樱花树下的小鹿" loading="lazy"></div>
+      </article>
+
+      <article class="svc-row reveal">
+        <div class="svc-jp">手配</div>
+        <div class="svc-body">
+          <h3 class="svc-name">住宿与机票代订</h3>
+          <p class="svc-text">温泉旅馆、町家、市区酒店，按预算和动线挑，不按返点挑。机票、JR 周游券一并处理，最后给你一份统一行程单，谁接机、住哪、几点出发都写在上面。</p>
+          <div class="svc-meta"><span>温泉旅馆</span><span>机票 · JR PASS</span><span>统一行程单</span></div>
+        </div>
+        <div class="svc-thumb"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/NClGbGDkao1qh0xC3jCcWOScnRc" alt="新干线站台上的列车" loading="lazy"></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 优势 ================= -->
+<section class="section" id="adv">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-jp">強み</div>
+      <div>
+        <h2 class="sec-title">做地接，靠的是这些</h2>
+        <p class="sec-desc">行程表谁都能写，差别在落地那天：车停在哪、下雨了怎么办、临时改了议程谁来兜。</p>
+      </div>
+    </div>
+
+    <div class="adv-grid">
+      <div class="adv reveal">
+        <span class="adv-jp">地接</span>
+        <h3 class="adv-title">专业地接团队</h3>
+        <p class="adv-text">长期跑关东、关西、中部与北海道，熟悉的不只是景点，还有停车场、入口和哪家店周一休息。</p>
+      </div>
+      <div class="adv reveal">
+        <span class="adv-jp">統籌</span>
+        <h3 class="adv-title">应急与统筹能力</h3>
+        <p class="adv-text">天气、延误、临时改点，现场有人拿主意。大团的动线提前拆好，一段出问题不影响下一段。</p>
+      </div>
+      <div class="adv reveal">
+        <span class="adv-jp">資源</span>
+        <h3 class="adv-title">稳定的供应资源</h3>
+        <p class="adv-text">酒店、车辆、景点长期合作，档期与价格更可控；旺季也尽量给你留出可以调的空间。</p>
+      </div>
+      <div class="adv reveal">
+        <span class="adv-jp">対話</span>
+        <h3 class="adv-title">中日双语全程服务</h3>
+        <p class="adv-text">司机、导游与对接同事都能用中文说清楚。你不用会日语，也不用替我们翻译。</p>
+      </div>
+      <div class="adv reveal">
+        <span class="adv-jp">対応</span>
+        <h3 class="adv-title">定制化行程设计</h3>
+        <p class="adv-text">私人小团、企业团、研学、商务考察、深度文化体验，都能按同一套流程排，但内容各自不同。</p>
+      </div>
+      <div class="adv reveal">
+        <span class="adv-jp">安全</span>
+        <h3 class="adv-title">安全管理体系</h3>
+        <p class="adv-text">供应商先审后用，行程中实时跟进；团队出行为每一步准备应急预案，出了事先处理再解释。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 流程 ================= -->
+<section class="section" id="flow">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-jp">流れ</div>
+      <div>
+        <h2 class="sec-title">从一句话，到一份行程单</h2>
+        <p class="sec-desc">六步，每一步都有人跟。你不需要会日语，也不需要自己查换乘。</p>
+      </div>
+    </div>
+
+    <div class="tl">
+      <div class="tl-num reveal">01</div>
+      <div class="tl-rail reveal"></div>
+      <div class="tl-body reveal">
+        <h3 class="tl-title">需求沟通</h3>
+        <p class="tl-text">目标、人数、预算、偏好，一次问清。有没有走不动的、只吃素的、需要安全座椅的，也在这时候说。</p>
+      </div>
+      <div class="tl-num reveal">02</div>
+      <div class="tl-rail reveal"></div>
+      <div class="tl-body reveal">
+        <h3 class="tl-title">方案设计</h3>
+        <p class="tl-text">给出初版行程、报价与备选：每天几点出发、车程多久、哪些点要预约、雨天换成什么。不合适就改。</p>
+      </div>
+      <div class="tl-num reveal">03</div>
+      <div class="tl-rail reveal"></div>
+      <div class="tl-body reveal">
+        <h3 class="tl-title">签订合同</h3>
+        <p class="tl-text">确认服务细节与边界，签署协议、支付订金。取消与变更规则写在确认单上，不用口头约定。</p>
+      </div>
+      <div class="tl-num reveal">04</div>
+      <div class="tl-rail reveal"></div>
+      <div class="tl-body reveal">
+        <h3 class="tl-title">资源对接</h3>
+        <p class="tl-text">酒店、车辆、门票、学校与企业访问逐项落实。出行前一周，你会收到完整行程单：司机、车牌、地址、第一站。</p>
+      </div>
+      <div class="tl-num reveal">05</div>
+      <div class="tl-rail reveal"></div>
+      <div class="tl-body reveal">
+        <h3 class="tl-title">落地执行</h3>
+        <p class="tl-text">司机在机场到达口或酒店门口等，全程有人陪同。天气变了、想多留一会儿，都可以商量。</p>
+      </div>
+      <div class="tl-num reveal">06</div>
+      <div class="tl-rail reveal"></div>
+      <div class="tl-body reveal">
+        <h3 class="tl-title">售后与反馈</h3>
+        <p class="tl-text">行程结束当日结清，整理照片与总结发你一份；下次再来，不用重新讲一遍你的习惯。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 相册 ================= -->
+<section class="section" id="gallery">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-jp">旅の記録</div>
+      <div>
+        <h2 class="sec-title">路上拍下来的</h2>
+        <p class="sec-desc">不是宣传照，是同行同事在路上顺手拍的几张。日本的季节走得快，这几张大概能说明我们常走的路线。</p>
+      </div>
+    </div>
+
+    <div class="gal-grid">
+      <div class="reveal">
+        <div class="gal gal-a"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/Vh97btPnSoPp2uxoLQkcBUcznrf" alt="奈良公园樱花与鹿" loading="lazy"></div>
+        <div class="gal-cap"><span>奈良 · 若草山脚</span><span>四月</span></div>
+      </div>
+      <div class="reveal">
+        <div class="gal gal-b"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/AFQbbLRWaohLyLxAEYZcBgfOn29" alt="京都祇园的白川通" loading="lazy"></div>
+        <div class="gal-cap"><span>京都 · 祇园</span><span>清晨</span></div>
+      </div>
+      <div class="reveal">
+        <div class="gal gal-a"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/O3DXbvtkMo5OVpxSBN2c0OJbn1f" alt="美瑛雪原上的一棵树" loading="lazy"></div>
+        <div class="gal-cap"><span>北海道 · 美瑛</span><span>一月</span></div>
+      </div>
+      <div class="reveal">
+        <div class="gal gal-b"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/UVcgbihcOoNP5vxoIsbcy3Eanqf" alt="温泉旅馆的露天风吕" loading="lazy"></div>
+        <div class="gal-cap"><span>箱根 · 温泉</span><span>入夜</span></div>
+      </div>
+      <div class="reveal">
+        <div class="gal gal-a"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/ZRn6bylu4ogdFBxrUU1csm7dnAw" alt="伊豆天际线上的公路" loading="lazy"></div>
+        <div class="gal-cap"><span>伊豆 · 天际线</span><span>午后</span></div>
+      </div>
+      <div class="reveal">
+        <div class="gal gal-b"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/VoPfb9Ry3oOarfxhaukcak7TnEb" alt="东京塔与城市夜景" loading="lazy"></div>
+        <div class="gal-cap"><span>东京 · 都心</span><span>夜</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 关于 ================= -->
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-jp">私たち</div>
+      <div>
+        <h2 class="sec-title">关于龙洋商事</h2>
+      </div>
+    </div>
+
+    <div class="about">
+      <div class="reveal">
+        <span class="quote-mark serif">“</span>
+        <h3 class="about-title">我们不做「日本七日游」，<br>只做你这一次的日本。</h3>
+        <p class="about-text">龙洋商事是设在日本的现地服务团队，中日双语对接。合作的司机与导游长期跑关东、关西、中部与北海道，知道哪个停车场离入口最近，哪家店周一休息。</p>
+        <p class="about-text">我们更愿意在出发前多问几句：同行的人里有没有走不动的、有没有只吃素的、这次是不是纪念日。这些细节决定行程好不好，而不是景点名单有多长。</p>
+        <p class="about-sign"><span></span>龙洋商事 · 旅程企划</p>
+      </div>
+      <dl class="fact-list reveal">
+        <div class="fact"><dt>服务范围</dt><dd>关东、关西、中部、北海道、九州的主要城市与近郊，可跨区连线。</dd></div>
+        <div class="fact"><dt>承接类型</dt><dd>私人小团、家庭旅行、企业团与商务考察、研学与冬夏令营。</dd></div>
+        <div class="fact"><dt>语言</dt><dd>中文（普通话）与日文；司机与导游全程中文沟通，落地即对接。</dd></div>
+        <div class="fact"><dt>车辆</dt><dd>按人数与行李配车，从轿车到商务车；车辆与司机按日本法规持证营运。</dd></div>
+        <div class="fact"><dt>报价</dt><dd>按行程逐项列明，车费、住宿、门票分开写，不打包成一个人均价。</dd></div>
+        <div class="fact"><dt>取消</dt><dd>具体规则写进确认单，出发前与签约时都会再确认一次。</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 预约 ================= -->
+<section class="section contact" id="contact">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-jp">ご相談</div>
+      <div>
+        <h2 class="sec-title">先说说你想怎么走</h2>
+        <p class="sec-desc">填几行就够了，剩下的我们来回问。收到后由负责该地区的同事直接回复。</p>
+      </div>
+    </div>
+
+    <div class="contact-grid">
+      <div class="reveal">
+        <p class="contact-lead">不必先想清楚。<br>把「大概想去哪、几个人、几天」写下来，<br>方案的部分交给我们。</p>
+        <p class="contact-small">企业团与研学团，也请一并说明人数、预算与访问目的，我们会按团队给出不同的动线。</p>
+        <p class="contact-small">工作时间：周一至周六 10:00 — 19:00（日本时间）</p>
+      </div>
+
+      <form class="reveal" id="inquiry" novalidate>
+        <div class="form-row">
+          <div class="field">
+            <label for="f-name">怎么称呼你</label>
+            <input id="f-name" name="name" type="text" placeholder="姓名 / 昵称" autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="f-people">同行人数</label>
+            <input id="f-people" name="people" type="text" placeholder="例：2 位成人 + 1 个孩子">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="f-when">出行时间</label>
+            <input id="f-when" name="when" type="text" placeholder="例：2027 年 4 月上旬，共 6 天">
+          </div>
+          <div class="field">
+            <label for="f-city">想去的城市</label>
+            <input id="f-city" name="city" type="text" placeholder="例：东京进、大阪出">
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-need">想要的服务与特别说明</label>
+          <textarea id="f-need" name="need" rows="3" placeholder="私人定制 / 企业团 / 研学 / 包车 / 住宿代订，以及任何不能妥协的事"></textarea>
+        </div>
+        <div class="form-foot">
+          <button class="btn btn-solid" type="submit">提交咨询</button>
+          <span class="form-msg" id="formMsg" role="status"></span>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 页脚 ================= -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <div class="seal">龍</div>
+          <div class="brand-text">
+            <span class="brand-name">龙洋商事</span>
+            <span class="brand-sub">RYUYO · JAPAN TRAVEL</span>
+          </div>
+        </div>
+        <p class="foot-note">日本现地旅行服务：私人定制与小团、企业团与商务考察、研学同行，以及包车、住宿与机票代订。本页为演示站点，联系方式与营业信息待补充。</p>
+      </div>
+      <div class="foot-col">
+        <h4>方案</h4>
+        <a href="#plan">私人定制</a>
+        <a href="#plan">企业团</a>
+        <a href="#plan">研学</a>
+        <a href="#service">单项服务</a>
+      </div>
+      <div class="foot-col">
+        <h4>了解</h4>
+        <a href="#adv">我们的优势</a>
+        <a href="#flow">合作流程</a>
+        <a href="#gallery">旅行相册</a>
+        <a href="#about">关于我们</a>
+      </div>
+    </div>
+    <div class="copyright">
+      <span>© 2026 龙洋商事 RYUYO</span>
+      <span>旅の栞 · 日本现地旅行服务</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  var items = document.querySelectorAll('.reveal');
+  if (reduce || !('IntersectionObserver' in window)) {
+    items.forEach(function(el){ el.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, {rootMargin:'0px 0px -8% 0px', threshold:0.1});
+    items.forEach(function(el, i){
+      el.style.transitionDelay = (Math.min(i % 4, 3) * 0.05) + 's';
+      io.observe(el);
+    });
+  }
+
+  var links = Array.prototype.slice.call(document.querySelectorAll('.nav a'));
+  var sections = links.map(function(a){ return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
+  if ('IntersectionObserver' in window && sections.length) {
+    var navIO = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (!e.isIntersecting) return;
+        links.forEach(function(a){ a.classList.toggle('is-active', a.getAttribute('href') === '#' + e.target.id); });
+      });
+    }, {rootMargin:'-45% 0px -50% 0px'});
+    sections.forEach(function(s){ navIO.observe(s); });
+  }
+
+  var form = document.getElementById('inquiry');
+  var msg = document.getElementById('formMsg');
+  if (form) {
+    form.addEventListener('submit', function(ev){
+      ev.preventDefault();
+      var name = form.querySelector('#f-name').value.trim();
+      var when = form.querySelector('#f-when').value.trim();
+      if (!name || !when) { msg.textContent = '请至少填写称呼和出行时间。'; return; }
+      msg.textContent = '已记录：' + name + '，' + when + '。演示站点尚未接入后台，正式上线后会发送到客服邮箱。';
+      form.reset();
+    });
+  }
+})();
+</script>
+</body>
+</html>
+<!-- （注：内容由AI生成） -->
